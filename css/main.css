@@ -1,0 +1,131 @@
+/* General CSS */
+body {
+    background: #fefefe;
+}
+
+h1 {
+    color: #EB712F;
+}
+
+.alt {
+    background: #ebebeb;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#landing .item {
+    margin: 0 1em;
+}
+
+.item {
+    margin: 1em;
+}
+
+.item div {
+    padding: 0.25em;
+}
+
+.content .item {
+    background: white;
+    border: 1px #EB712F solid;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+}
+
+.sectionTitle {
+    text-align: center;
+    font: 50px 'Open Sans', sans-serif;
+    color: #EB712F;
+    padding-top: 1em;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #EB712F;
+}
+  
+a:hover, a:active {
+    text-decoration: none;
+    color: #472C25;
+}
+
+a:active {
+    text-decoration: none;
+    color: #EB712F;
+}
+
+/* Landing */
+#name {
+    color: #EB712F;
+    font: 30px 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#attributes {
+    font: 14px 'Open Sans', sans-serif;
+}
+
+/* Academics */
+#academics img {
+    width: 50px;
+    height: 50px;
+}
+
+#academics .item {
+    max-width: 600px;
+}
+
+#academics {
+    padding-bottom: 2em;
+}
+
+.school {
+    font-size: 18px;
+}
+
+/* Programming */
+#programming .item {
+    width: 1200px;
+}
+
+#programming .item img {
+    border: 1px solid black;
+}
+
+.text {
+    text-align: left;
+}
+
+#programming div {
+    line-height: 2;
+}
+
+/* Writing */
+#writing .item {
+    width: 600px;
+}
+
+#writing .item img {
+    border: 1px solid black;
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+    #attributes {
+        font-size: 18px;
+    }
+
+    .item:hover {
+        box-shadow: 3px 3px rgba(0,0,0,0.26);
+    }
+
+    #landing .item:hover {
+        box-shadow: none;
+    }
+}
