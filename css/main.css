@@ -1,14 +1,48 @@
 /* General CSS */
 body {
-    background: #fefefe;
+    background: #FEFEFE;
+    font: 16px 'Open Sans', sans-serif;
+}
+
+.alt {
+    background: #D9D9D9;
+}
+
+.alt2 {
+    background: #C0C0C0;
 }
 
 h1 {
     color: #EB712F;
+    font: bold 50px 'Open Sans', sans-serif;
+    margin: 1em 1em 0 1em;
+    text-align: center;
 }
 
-.alt {
-    background: #ebebeb;
+h2 {
+    font: 45px 'Open Sans', sans-serif;
+    color: #EB712F;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+h3 {
+    margin: 0.5em 0 0.5em 0;
+}
+
+a:link, a:visited {
+    color: #EB712F;
+    text-decoration: none;
+}
+  
+a:hover, a:active {
+    color: #472C25;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+    color: #EB712F;
 }
 
 .container {
@@ -18,60 +52,70 @@ h1 {
     justify-content: space-around;
 }
 
-#landing .item {
-    margin: 0 1em;
-}
-
 .item {
-    margin: 1em;
+    line-height: 2;
+
+    padding: 10px;
+    text-align: center;
 }
 
-.item div {
-    padding: 0.25em;
+.content {
+    margin: 0;
 }
 
-.content .item {
-    background: white;
-    border: 1px #EB712F solid;
-    border-radius: 3px;
+button {
+    background-color: #EB712F;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #EB712F;
+    margin:0.5em 0 0.5em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    font: bold 18px 'Roboto',sans-serif;
+    font-weight:300;
+    color: black;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Header */
+#header {
     text-align: center;
     padding: 10px;
-}
-
-.sectionTitle {
-    text-align: center;
-    font: 50px 'Open Sans', sans-serif;
-    color: #EB712F;
-    padding-top: 1em;
-}
-
-a:link, a:visited {
-    text-decoration: none;
-    color: #EB712F;
-}
-  
-a:hover, a:active {
-    text-decoration: none;
-    color: #472C25;
-}
-
-a:active {
-    text-decoration: none;
-    color: #EB712F;
+    position: fixed;
+    top: 0;
+    width:105%;
+    left:-3%;
+    background-image: linear-gradient(#EB712F, #D9D9D9);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 50% 75%;
+    border-bottom-right-radius: 50% 75%;
 }
 
 /* Landing */
-#name {
-    color: #EB712F;
-    font: 30px 'Open Sans', sans-serif;
-    text-align: center;
+#landing {
+    margin-top: 50px;
 }
 
 #attributes {
-    font: 14px 'Open Sans', sans-serif;
+    font: bold 20px 'Open Sans', sans-serif;
+}
+
+#landing .item {
+    margin-bottom: 0;
 }
 
 /* Academics */
+#academics {
+    margin-top: 2em;
+    padding: 2em 0;
+}
+
 #academics img {
     width: 50px;
     height: 50px;
@@ -79,10 +123,6 @@ a:active {
 
 #academics .item {
     max-width: 600px;
-}
-
-#academics {
-    padding-bottom: 2em;
 }
 
 .school {
@@ -94,16 +134,23 @@ a:active {
     width: 1200px;
 }
 
-#programming .item img {
-    border: 1px solid black;
-}
-
 .text {
     text-align: left;
+    margin: 0.5em 0.5em 2em 0.5em;
 }
 
-#programming div {
-    line-height: 2;
+.programmingPic img {
+    border: 1px solid #EB712F;
+    margin-top: 2em;
+}
+
+#programming img {
+    margin: 0.5em 0 0.5em 0;
+}
+
+.title {
+    font-size: 18px;
+    margin-top: 2em;
 }
 
 /* Writing */
@@ -111,21 +158,38 @@ a:active {
     width: 600px;
 }
 
-#writing .item img {
-    border: 1px solid black;
-}
-
 /* Desktop */
+/*
 @media (min-width: 800px) {
     #attributes {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .item:hover {
-        box-shadow: 3px 3px rgba(0,0,0,0.26);
+        border: 1px black solid;
     }
 
     #landing .item:hover {
-        box-shadow: none;
+        border: none;
     }
-}
+    
+    #landing .item {
+        margin: 0 1em;
+    }
+    
+    .item {
+        margin: 1em;
+    }
+    
+    .item div {
+        padding: 0.25em;
+    }
+    
+    .content .item {
+        background: white;
+        border: 1px #EB712F solid;
+        border-radius: 3px;
+        text-align: center;
+        padding: 10px;
+    }
+}*/
